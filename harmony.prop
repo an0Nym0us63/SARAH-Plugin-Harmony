@@ -1,0 +1,11 @@
+{
+  "modules" : { 
+    "harmony"  : {
+      "description": "Controle du logitech harmony hub",
+      "version"    : "1.0",
+      "ip_hub"   : "",
+	  "user_logitech"   : "",
+	  "password_logitech"   : ""
+    }
+  }
+}

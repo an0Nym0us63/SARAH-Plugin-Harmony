@@ -1,0 +1,24 @@
+<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="ruleharmony" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="ruleharmony" scope="public">
+    <example>Sarah mets l'activité Neufbox</example>
+    <tag>out.action=new Object(); </tag>
+    <item>Sarah</item>
+    <one-of>
+      <item>allume le ventilateur<tag>out.action.type="device";out.action.id="22590123";out.action.command="PowerToggle";out.action.tts="Le ventilateur va s'allumer"</tag></item>
+      <item>éteins le ventilateur<tag>out.action.type="device";out.action.id="22590123";out.action.command="PowerToggle";out.action.tts="Le ventilateur va s'éteindre"</tag></item>
+	  <item>change la vitesse du ventilateur<tag>out.action.type="device";out.action.id="22590123";out.action.command="Speed+\/-";out.action.tts="La vitesse va changer"</tag></item>
+	  <item>active l'anti moustique<tag>out.action.type="device";out.action.id="22590123";out.action.command="Antimosquito";out.action.tts="L'antimoustique va s'activer"</tag></item>
+	  <item>active le turbo du ventilateur<tag>out.action.type="device";out.action.id="22590123";out.action.command="TurboBoost";out.action.tts="Le turbo va s'activer"</tag></item>
+	  <item>désactive l'anti moustique<tag>out.action.type="device";out.action.id="22590123";out.action.command="Antimosquito";out.action.tts="L'antimoustique va se désactiver"</tag></item>
+	  <item>désactive le turbo du ventilateur<tag>out.action.type="device";out.action.id="22590123";out.action.command="TurboBoost";out.action.tts="Le turbo va se désactiver"</tag></item>
+	  <item>allume la télévision<tag>out.action.type="device";out.action.id="22590057";out.action.command="PowerOn";out.action.tts="La télé va s'allumer"</tag></item>
+	  <item>mets l'activité ordinateur<tag>out.action.type="activity";out.action.id="11169917";out.action.tts="L'activité ordinateur va se lancer"</tag></item>
+      <item>mets l'activité neufbox<tag>out.action.type="activity";out.action.id="11169803";out.action.tts="L'activité neufbox va se lancer"</tag></item>
+      <item>mets l'activité télévision<tag>out.action.type="activity";out.action.id="11169766";out.action.tts="L'activité télévision va se lancer"</tag></item>
+      <item>mets l'activité oui you<tag>out.action.type="activity";out.action.id="11170399";out.action.tts="L'activité oui you va se lancer"</tag></item>
+	  <item>éteins tous les appareils<tag>out.action.type="activity";out.action.id="-1";out.action.tts="Tout va se couper"</tag></item>
+      
+	</one-of>
+<tag>out.action._attributes.uri="http://127.0.0.1:8080/sarah/harmony";</tag>
+  </rule>
+</grammar>
